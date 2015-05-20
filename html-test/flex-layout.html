@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style type="text/css">
+
+body {
+	font-size: 62.5%;
+}
+
+.block .display {
+	display: block;
+}
+
+.inlineFlex .display {
+	display:inline-flex;
+}
+
+.blockFlex .display {
+	display: flex;
+}
+
+p {
+	width: 50px;
+	height: 50px;
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+div.display p:nth-child(1) {
+	background-color: red;
+}
+
+div.display p:nth-child(2) {
+	background-color: blue;
+}
+
+div.display p:nth-child(3) {
+	background-color: green;
+}
+
+</style>
+</head>
+<body>
+<section class="block color">
+	<h1>通常のブロックレイアウト</h1>
+	<div class="display">
+		<p>1</p>
+		<p>2</p>
+		<p>3</p>
+	</div>
+</section>
+<section class="inlineFlex color">
+	<h1>フレキシブルボックスのインラインレイアウト</h1>
+	<div class="display">
+		<p>1</p>
+		<p>2</p>
+		<p>3</p>
+	</div>
+</section>
+<section class="blockFlex color">
+	<h1>フレキシブルボックスのブロックレイアウト</h1>
+	<div class="display">
+		<p>1</p>
+		<p>2</p>
+		<p>3</p>
+	</div>
+</section>
+</body>
+</html>
